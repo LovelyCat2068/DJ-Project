@@ -6,7 +6,7 @@ yatleft = 0;
 yatright = 0;
 score_left =0;
 canarycream = "";
-
+pukingpastilies= "";
 
 function preload(){
     songHP = loadSound("Harry Potter.mp3");
@@ -43,6 +43,7 @@ function draw(){
     stroke("#3232a8");
 
     canarycream = songPP.isPlaying(true, false);
+    pukingpastilies = songHP.isPlaying(true, false);
 
     if(score_left < 0.2){
         circle(xatleft, yatleft, 20);
@@ -50,6 +51,15 @@ function draw(){
         if(canarycream = false){
             songPP.start();
             document.getElementById("spongy").innerHTML = "Song Name = PeterPan Theme Song";
+        }
+    }
+
+    if(score_right < 0.2){
+        circle(xatright, yatright, 20);
+        songPP.stop();
+        if(pukingpastilies = false){
+            songHP.start();
+            document.getElementById("spongy").innerHTML = "Song Name = Harry Potter Prolouge Song";
         }
     }
 }
