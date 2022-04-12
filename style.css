@@ -1,0 +1,21 @@
+.heading{
+  width: 100%;
+  height: 90px;
+  margin: 0;
+  font-size: large;
+}
+.note{
+  font-size: medium;
+}
+#songy{
+  box-shadow: 5px 5px 5px slategrey;
+  font-size: large;
+  padding: 10px;
+  margin: 80px;
+}
+canvas{
+  border: 5px dashed dimgrey;
+  box-shadow: 5px 5px 5px dimgray;
+  padding: 5px;
+  margin-left: 620px;
+}
